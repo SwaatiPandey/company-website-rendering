@@ -1,65 +1,52 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-
-export default function Home() {
+import axios from "axios";
+import url from "../apiCall/data";
+import Link from "next/link";
+//components
+import HomeStyles from "../styles/Index.module.css";
+//function to render data on home page
+function Home(props) {
+  let home = props.home[0];
+  console.log(home);
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+    <>
+      <title>Home</title>
+      <h1>Home</h1>
+      <div className={HomeStyles.container}>
+        <h2>Talent wins games, but teamwork and intelligence win championships!!</h2>
+        <h3>Explore more to know who we are...</h3>
+        {/* <img src={home.backgroundImage}></img> */}
+        <div className={HomeStyles.buttonContainer}>
+          <Link href="/contentstack">
+            <button className={HomeStyles.button1}>Contentstack</button>
+          </Link>
+          <Link href="/surfboard">
+            <button className={HomeStyles.button2}>Surfboard</button>
+          </Link>
+          <Link href="/rawEngineering">
+            <button className={HomeStyles.button1}>Raw Engineering</button>
+          </Link>
         </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
-  )
+        <div className={HomeStyles.logoContainer}>
+          {home.companies.map((company, i) => {
+            return (
+              <img
+                src={company.logo}
+                alt="company logo"
+                className={HomeStyles.logoImg}
+              />
+            );
+          })}
+        </div>
+      </div>
+    </>
+  );
 }
+export const getStaticProps = async () => {
+  let { data } = await axios.get(url + "home.json");
+  return {
+    props: {
+      home: [...data],
+    },
+  };
+};
+export default Home;
