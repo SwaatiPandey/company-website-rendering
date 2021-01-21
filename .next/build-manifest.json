@@ -14,15 +14,15 @@
     "static/development/_ssgManifest.js"
   ],
   "pages": {
-    "/": [
+    "/Raweng": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
-      "static/chunks/pages/index.js"
+      "static/chunks/pages/Raweng.js"
     ],
-    "/Contentstack": [
+    "/Surfboard": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
-      "static/chunks/pages/Contentstack.js"
+      "static/chunks/pages/Surfboard.js"
     ],
     "/_app": [
       "static/chunks/main.js",

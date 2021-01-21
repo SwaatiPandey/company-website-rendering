@@ -1,3 +1,420 @@
-.header{
-    font-size: 30px;
-}
+.home {
+    width: 100vw;
+    height: 100vh;
+    background-size: 100% 100%;
+    background-image: url("https://images.contentstack.io/v3/assets/blt137524604e62b5cb/blt971bfb34d4e547b8/5f50e9400ab106265a188450/Home-hero-banner-new@3x.png");
+  }
+  .home > nav {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+  }
+  .li {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .a {
+    padding: 0 30px;
+  }
+  .banner {
+    width: 70vw;
+    height: 60vh;
+    margin: 50px 0;
+    margin-left: 100px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .banner > h1 {
+    font-size: 4rem;
+  }
+  .banner > p {
+    font-size: 1.5rem;
+    padding-top: 20px;
+  }
+  .portfolio {
+    width: 100vw;
+    height: auto;
+  }
+  .portfolio-container {
+    width: 100vw;
+    height: auto;
+    display: flex;
+  }
+  .portfolio-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+  }
+  .portfolio-left > img {
+    width: 50vw;
+    height: 50vh;
+    background-size: cover;
+  }
+  .portfolio > h1 {
+    text-align: center;
+    padding: 70px 0;
+  }
+  .portfolio-right {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding-right: 30px;
+  }
+  .portfolio-anchor {
+    font-size: 2rem;
+  }
+  .portfolio-desc {
+    padding: 40px 0;
+  }
+  .portfolio-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .portfolio-button {
+    text-align: center;
+    border: none;
+    width: 200px;
+    height: 50px;
+    background-color: rgb(65, 192, 235);
+    color: white;
+    border-radius: 30px;
+    margin-bottom: 40px;
+  }
+  .team {
+    width: 100vw;
+    height: auto;
+  }
+  .team > h1 {
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 40px;
+  }
+  .team-container {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .team-box {
+    width: 70vw;
+    height: 50vh;
+    border: 1px solid rgb(216, 216, 231);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px 0;
+    border-radius: 10px;
+    padding: 0 30px;
+  }
+  .team-box-left > img {
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    border-radius: 10px;
+  }
+  .team-box-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding-left: 30px;
+  }
+  .philosophy {
+    width: 100vw;
+    height: auto;
+  }
+  .philosophy > h1 {
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 40px;
+  }
+  .philosophy-container {
+    width: 80vw;
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+  }
+  .philosophy-box {
+    width: 40vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .philosophy-box > p {
+    text-align: center;
+  }
+  .footer {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .footer-up {
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+  .footer-sec {
+    width: auto;
+    display: flex;
+    height: 30vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 10px;
+  }
+  .footer-icon {
+    width: 20vw;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 2rem;
+  }
+  .footer-down {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .underline {
+    width: 80vw;
+    height: 1px;
+    margin: 10px auto;
+    background-color: gray;
+  }
+  @media screen and (max-width: 900px) {
+      .home > nav {
+          width: 100vw;
+          height: auto;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: space-between;
+          padding: 10px 0px;
+        }
+        .li {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+        }
+        .a {
+          padding: 0 20px;
+        }
+     
+    .team-box {
+      width: 70vw;
+      height: auto;
+      border: 1px solid rgb(216, 216, 231);
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      margin: 20px 0;
+      border-radius: 10px;
+      padding: 0 30px;
+    }
+  }
+  @media screen and (max-width: 700px) {
+   
+  .banner {
+      width: 70vw;
+      height: 60vh;
+      margin: 50px 0;
+      margin-left: 30px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+    }
+      .banner > h1 {
+          font-size: 3rem;
+        }   
+  .team-box {
+      width: 80vw;
+      height: auto;
+      border: 1px solid rgb(216, 216, 231);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      margin: 20px 0;
+      border-radius: 10px;
+  padding: 10px 0;
+    }
+    
+    .team-box-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-evenly;
+      padding-left: 30px;
+    }
+    
+  .philosophy > h1 {
+      text-align: center;
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+    .philosophy-container {
+      width: 80vw;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      margin: 10px auto;
+    }
+    .philosophy-box {
+      width: 80vw;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      padding:30px 0
+    }
+    .philosophy-box > p {
+      text-align: center;
+    }
+  
+    
+  .footer {
+      width: 100vw;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .footer-up {
+      width: 100vw;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    .footer-sec {
+      width: auto;
+      display: flex;
+      height: 20vh;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      padding-top: 3px;
+    }
+    .footer-icon {
+      width: 20vw;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      font-size: 2rem;
+      padding:10px 0;
+    }
+    .footer-down {
+      width: 100vw;
+      height: 10vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .underline {
+      width: 100vw;
+      height: 1px;
+      margin: 10px auto;
+      background-color: gray;
+    }
+  
+  }
+  @media screen and (max-width: 400px) {
+      .home > nav {
+          width: 100vw;
+          height: auto;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: space-between;
+          padding: 10px 0px;
+        }
+        .li {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+        }
+        .portfolio {
+          width: 100vw;
+          height: auto;
+        }
+        .portfolio-container {
+          width: 100vw;
+          height: auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: center;
+        }
+        .portfolio-left {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding-left: 20px;
+        }
+        .portfolio-left > img {
+          width: 100vw;
+          height: auto;
+          background-size: cover;
+        }
+        .portfolio > h1 {
+          text-align: center;
+          padding: 70px 0;
+        }
+        .portfolio-right {
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-evenly;
+          flex-direction: column;
+          padding:0 10px;
+        }
+        
+  }
+  @media screen and (max-width: 400px) {
+      .banner > h1 {
+          font-size: 2rem;
+        }   
+        
+  .banner > p {
+      font-size: 1rem;
+      padding-top: 10px;
+    }
+    .team-box-left > img {
+      width: 150px;
+      height: 150px;
+      background-size: cover;
+      border-radius: 10px;
+    }
+  }
