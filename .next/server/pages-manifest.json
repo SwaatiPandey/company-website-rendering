@@ -3,8 +3,5 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/": "pages/index.js",
-  "/next/dist/pages/_error": "pages/next/dist/pages/_error.js",
-  "/Contentstack": "pages/Contentstack.js",
-  "/Surfboard": "pages/Surfboard.js",
-  "/Raweng": "pages/Raweng.js"
+  "/Contentstack": "pages/Contentstack.js"
 }
