@@ -16,13 +16,13 @@ function Home(props) {
         <h3>Explore more to know who we are...</h3>
         {/* <img src={home.backgroundImage}></img> */}
         <div className={HomeStyles.buttonContainer}>
-          <Link href="/contentstack">
+          <Link href="/Contentstack">
             <button className={HomeStyles.button1}>Contentstack</button>
           </Link>
-          <Link href="/surfboard">
+          <Link href="/Surfboard">
             <button className={HomeStyles.button2}>Surfboard</button>
           </Link>
-          <Link href="/rawengineering">
+          <Link href="/Raweng">
             <button className={HomeStyles.button1}>Raw Engineering</button>
           </Link>
         </div>
