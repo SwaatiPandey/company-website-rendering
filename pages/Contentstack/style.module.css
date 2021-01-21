@@ -1,6 +1,390 @@
-.navbar img{
+.head-sec {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://images.contentstack.io/v3/assets/bltc5a09bf374882538/blt0eac3686a06a4a3f/5f1a2be2ecbff322d09554d6/hero-carousel-1.jpg");
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 15vh;
+  }
+  .head-sec > nav > img {
     width: 20vw;
-    height: 10vh;
-    background-size: cover;
-    background-color: blue;
-}
+    height: auto;
+    padding-left: 100px;
+  }
+  .link-sec {
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-right: 100px;
+  font-size: 1rem;
+  }
+  .link-sec > p {
+    padding-right: 30px;
+  }
+  .banner-container {
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner {
+    width: 70%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .banner > * {
+    color: white;
+  }
+  .banner > h1 {
+    font-size: 3rem;
+    padding: 0 30px;
+    text-align: center;
+  }
+  .banner h3 {
+    padding: 0px 30px;
+    text-align: center;
+  }
+  .banner > button {
+    background-color: #eb5646;
+    color: white;
+    border: none;
+    width: 10vw;
+    height: 5vh;
+  }
+  .banner p {
+    color: #eb5646;
+  }
+  
+  .why-sec-container {
+    width: 100vw;
+    height: 90vh;
+    margin-top: 20px;
+  }
+  .why-sec {
+    width: 100vw;
+    height: 50vh;
+    background: linear-gradient(75deg, #5a20b9, #eb5646);
+    margin: 10px 0;
+  }
+  .why-sec h1 {
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+  }
+  .card-sec {
+    width: 80vw;
+    height: 60vh;
+    display: flex;
+    align-items: flex-start;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .card {
+    width: 40vw;
+    height: 60vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 10px;
+    border: 0.1px solid rgb(252, 243, 243);
+  }
+  .card h3 {
+    font-size: 2rem;
+  }
+  .card p {
+    padding-top: 50px;
+    font-size: 1.3rem;
+  }
+  .buttom-sec {
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 40vh;
+    background-image: url("https://images.contentstack.io/v3/assets/bltc5a09bf374882538/blta8ec620b53524f45/5f1a2bd31db8ad781814787d/download.jpg");
+  }
+  .buttom-sec h1 {
+    color: white;
+    font-size: 3rem;
+  }
+  .buttom-sec button {
+    background-color: #eb5646;
+    border: none;
+    margin: 10px;
+    width: 200px;
+    color: white;
+    height: 40px;
+  }
+  .footer {
+    width: 100vw;
+    height: 90vh;
+  }
+  .footer-upper {
+    width: 90vw;
+    height: 70vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+  .footer-left {
+    width: 30vw;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .footer-left > img {
+    padding-top: 30px;
+  }
+  .icons {
+    font-size: 1.5rem;
+    padding-top: 10px;
+  }
+  
+  .footer-right {
+    width: 70vw;
+    height: 70vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .footer-sec {
+    width: 20vw;
+    height: 70vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-lower-underline {
+    width: 85vw;
+    height: 1px;
+    margin: 0 auto;
+    background-color: black;
+  }
+  .link {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 30px;
+  }
+  .link-bottom-last {
+    padding-right: 30px;
+  }
+   
+  
+  @media screen and (max-width: 900px) {
+    .navbar {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 100vw;
+      height: 15vh;
+      padding-top: 10px;
+    }
+  
+    .head-sec > nav > img {
+      width: 40vw;
+      height: 5vh;
+      padding-left: 0px;
+    }
+    .link-sec {
+      color: white;
+      width: 100vw;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center;
+      padding-right: 0px;
+    }
+    .banner {
+      width: 100%;
+      height: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+  
+    .banner > button {
+      background-color: #eb5646;
+      color: white;
+      border: none;
+      width: 10vw;
+      height: auto;
+    }
+    .why-sec-container {
+      width: 100vw;
+      height: auto;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+    .why-sec {
+      width: 100vw;
+      height: auto;
+      background: linear-gradient(75deg, #5a20b9, #eb5646);
+      margin: 10px 0;
+    }
+    .card-sec {
+      width: 50vw;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto;
+      justify-content: center;
+    }
+    .card {
+      width: 50vw;
+      height: auto;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding: 0px 20px;
+      border: 0.1px solid rgb(252, 243, 243);
+      margin: 10px 0;
+    }
+  
+    .footer {
+      width: 100vw;
+      height: auto;
+    }
+    .footer-upper {
+      width: 90vw;
+      height: auto;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .footer-left {
+      width: 30vw;
+      height: auto;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    .footer-right {
+      width: 70vw;
+      height: auto;
+      flex-direction: column;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    .footer-sec {
+      width: auto;
+      height: 70vh;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+   
+   @media screen and (max-width: 500px) {
+    .navbar {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 100vw;
+      height: auto;
+      padding-top: 10px;
+    }
+    .head-sec > nav > img {
+      width: 40vw;
+      height: 5vh;
+      padding-left: 0px;
+    }
+  
+    .link-sec {
+      color: white;
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      padding-right: 0px;
+    }
+    .banner {
+      width: 100%;
+      height: 85%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+  
+    .banner > h1 {
+      font-size: 1.2rem;
+      padding: 0 30px;
+      text-align: center;
+    }
+    .banner h3 {
+      padding: 0px 30px;
+      text-align: center;
+      font-size: 0.8rem;
+    }
+    .banner>button{
+      width: 100px;
+    }
+    .buttom-sec {
+      width: 100vw;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-direction: column;
+      height: 40vh;
+      background-image: url("https://images.contentstack.io/v3/assets/bltc5a09bf374882538/blta8ec620b53524f45/5f1a2bd31db8ad781814787d/download.jpg");
+    }
+    .buttom-sec h1 {
+      color: white;
+      font-size: 2rem;
+    }
+    .buttom-grp {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    .buttom-sec button {
+      background-color: #eb5646;
+      border: none;
+      margin: 10px;
+      width: 200px;
+      color: white;
+      height: 40px;
+    }
+    .card h3 {
+      font-size: 1.3rem;
+    }
+    .card p {
+      font-size: 0.8rem;
+    }
+  
+    .icons-style {
+      font-size: 1.5rem;
+      padding-top: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+  }
