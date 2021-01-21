@@ -2,7 +2,7 @@ import axios from "axios";
 import url from "../apiCall/data";
 import Link from "next/link";
 //components
-import HomeStyles from "../styles/Index.module.css";
+import style from "./style.module.css";
 //function to render data on home page
 function Home(props) {
   let home = props.home[0];
