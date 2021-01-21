@@ -19,11 +19,11 @@ function Home(props) {
           <Link href="/Contentstack">
             <button className={HomeStyles.button1}>Contentstack</button>
           </Link>
-          <Link href="/Surfboard">
-            <button className={HomeStyles.button2}>Surfboard</button>
-          </Link>
           <Link href="/Raweng">
             <button className={HomeStyles.button1}>Raw Engineering</button>
+          </Link>
+          <Link href="/Surfboard">
+            <button className={HomeStyles.button2}>Surfboard</button>
           </Link>
         </div>
         <div className={HomeStyles.logoContainer}>

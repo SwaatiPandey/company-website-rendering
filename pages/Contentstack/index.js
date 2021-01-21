@@ -10,7 +10,6 @@ import {
 } from "react-icons/fa";
 function Contentstack(props) {
   let contentstack = props.contentstack[0];
-  console.log(contentstack);
   return (
     <>
       <title>Contentstack</title>

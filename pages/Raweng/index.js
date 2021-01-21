@@ -11,7 +11,6 @@ import {
 } from "react-icons/fa";
 function RawEngineering(props) {
   let rawengineering = props.rawengineering[0];
-  console.log(rawengineering);
   return (
     <>
       <title>Rawengineering</title>
