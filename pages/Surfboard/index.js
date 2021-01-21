@@ -138,20 +138,3 @@ export const getStaticProps = async () => {
   };
 };
 export default Surfboard;
-
-{
-  /* <Head>
-        <title>Surfboard</title>
-      </Head>
-      <div className={styles["header"]}>
-        <h1>Surfboard</h1>
-      </div>
-      <div>
-        <Link href="/raw-engineering">
-          <a>Raw Engineering</a>
-        </Link>
-        <Link href="/contentstack">
-          <a>Contentstack</a>
-        </Link>
-      </div> */
-}

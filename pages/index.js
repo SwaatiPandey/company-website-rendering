@@ -3,18 +3,15 @@ import url from "../apiCall/data";
 import Link from "next/link";
 //components
 import HomeStyles  from "./style.module.css";
-//function to render data on home page
 function Home(props) {
   let home = props.home[0];
   console.log(home);
   return (
     <>
       <title>Home</title>
-      {/* <h1>Home</h1> */}
       <div className={HomeStyles.container}>
         <h2>Talent wins games, but teamwork and intelligence win championships!!</h2>
         <h3>Explore more to know who we are...</h3>
-        {/* <img src={home.backgroundImage}></img> */}
         <div className={HomeStyles.buttonContainer}>
           <Link href="/Contentstack">
             <button className={HomeStyles.button1}>Contentstack</button>

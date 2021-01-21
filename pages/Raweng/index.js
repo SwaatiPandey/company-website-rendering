@@ -114,11 +114,6 @@ function RawEngineering(props) {
             </div>
           </div>
         </footer>
-        {/* <div>
-          {contentstack.footer.map((footerLinks, i) => {
-            return <li key={i}>{footerLinks}</li>;
-          })}
-        </div> */}
       </div>
     </>
   );
