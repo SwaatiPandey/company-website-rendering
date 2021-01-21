@@ -16,14 +16,14 @@ Raw Engineering
 
 Main body content with banner image.
 Footer with social media and related links.
-=i
+
 The data for company information is stored on a static file system hosted on GitHub.
 
 Dependencies: 
- "axios","next","react","react-dom".
+ "axios","next","react","react-dom", "react-icons".
 
 Folder Description:
- It has following folders:Api call, which contains url of the hosted data.Pages which contains all the companies folder within their files.
+ It has following folders:Api call, which contains url of the hosted data.Pages which contains all the companies folders.And has their index pages and style.
 
 5.Technologies Used: 
   FRONTEND Next.js 
